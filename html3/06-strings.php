@@ -437,7 +437,7 @@ IndexError: string index out of range</code></pre>
 <p>One possibility is to simply use the <code>startswith</code> method which returns <code>False</code> if the string is empty.</p>
 <pre class="python"><code>if line.startswith(&#39;#&#39;):</code></pre>
 <p> </p>
-<p>Another way is to safely write the <code>if</code> statement using the <em>guardian</em> pattern and make sure the second logical expression is evaluated only where there is at least one character in the string.:</p>
+<p>Another way is to safely write the <code>if</code> statement using the <em>guardian</em> pattern and make sure the second logical expression is evaluated only where there is at least one character in the string:</p>
 <pre class="python"><code>if len(line) &gt; 0 and line[0] == &#39;#&#39;:</code></pre>
 <h2 id="glossary">Glossary</h2>
 <dl>
@@ -497,7 +497,7 @@ IndexError: string index out of range</code></pre>
 <p> </p>
 <p><strong>Exercise 6: Read the documentation of the string methods at <a href="https://docs.python.org/library/stdtypes.html#string-methods" class="uri">https://docs.python.org/library/stdtypes.html#string-methods</a> You might want to experiment with some of them to make sure you understand how they work. <code>strip</code> and <code>replace</code> are particularly useful.</strong></p>
 <p><strong>The documentation uses a syntax that might be confusing. For example, in <code>find(sub[, start[, end]])</code>, the brackets indicate optional arguments. So <code>sub</code> is required, but <code>start</code> is optional, and if you include <code>start</code>, then <code>end</code> is optional.</strong></p>
-<section class="footnotes" role="doc-endnotes">
+<section class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr />
 <ol>
 <li id="fn1" role="doc-endnote"><p>A tuple is a sequence of comma-separated values inside a pair of parenthesis. We will cover tuples in Chapter 10<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
